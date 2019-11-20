@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h2 class="display-4 text-center">
+    Welcome<br /><br />
+
+    <div class="text-md-center">
+        <div class="text-md-center">
+            <table class="text-center align-items-right">
+
+                <th class="diceout rounded blockquote" style="min-width:400px; ">
+                    Enter the number of sides <br />you want the dice to have<br />
+                </th>
+                <th></th>
+
+                <th class="diceout rounded blockquote" style="min-width:400px; ">
+                    Enter the number of times <br />you want to roll the dice<br />  
+                </th>
+                <tr>
+                    <td></td>
+                    <form method="post" asp-controller="Home" asp-action="Roll" />
+                    <td><input type="number" name="Sides" value="Sides" required style="max-width:450px; min-height:100px; min-width:100px;" class="btn btn-outline-dark btn-lg btn-block" /></td>
+                    <td class="column"></td>
+                    <td><input type="number" name="Rolls" value="Rolls" required style="max-width:450px; min-width:100px; min-height:100px;" class="btn btn-outline-dark btn-lg btn-block" /></td>
+                </tr>
+            </table><br />
+            <input type="submit" name="submit" value="Submit" class="btn btn-outline-dark btn-lg btn-block" />
+        </div>
+    </div>
+</h2>

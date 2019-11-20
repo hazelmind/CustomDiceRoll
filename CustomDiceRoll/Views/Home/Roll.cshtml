@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Roll";
+}
+
+<h1>
+    You rolled...
+    <br /><br />
+    <h2>
+        <div class="row ">
+            <div class="row ">
+                @{
+                    foreach (int l in @Model)
+                    {
+                        <div class="text-md-center" style="padding-top:1em; ">
+                            <div class="diceout col-md-4" style="background-color:black; color:white">
+                                <div class="dicenum text-lg-left">@l</div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </h2>
+</h1>
